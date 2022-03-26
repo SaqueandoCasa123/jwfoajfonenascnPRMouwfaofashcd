@@ -1,0 +1,275 @@
+#Infamy
+###############################
+country_event = {
+	id = 198401
+	title = "EVTNAME198401"
+	desc = "EVTDESC198401"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Don't spare any resources, the world will believe what we want!"
+		badboy = -5
+		treasury = -1000000
+	}
+	
+	option = {
+		name = "A little help is needed cleaning the name of our country"
+		badboy = -2
+		treasury = -500000
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+}
+
+#Expansionism
+###############################
+country_event = {
+	id = 198402
+	title = "EVTNAME198402"
+	desc = "EVTDESC198402"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Our expansionist behavior must continue!"
+		any_pop = {
+			dominant_issue {
+				value = jingoism
+				factor = 0.05
+			}
+		}
+		treasury = -500000
+	}
+	
+	option = {
+		name = "Wars can be won on paper."
+		war_exhaustion = -5
+		treasury = -250000
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+}
+
+#Political
+###############################
+country_event = {
+	id = 198404
+	title = "EVTNAME198404"
+	desc = "EVTDESC198404"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Focus on trade policies"
+		country_event = 198411
+	}
+	
+	option = {
+		name = "Focus on economic policies"
+		country_event = 198412
+	}
+	
+	option = {
+		name = "Focus on religious policies"
+		country_event = 198413
+	}
+	
+	option = {
+		name = "Focus on citizenship policies"
+		country_event = 198414
+	}
+	
+	option = {
+		name = "Focus on war policies"
+		country_event = 198415
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+}
+
+country_event = {
+	id = 198405
+	title = "EVTNAME198405"
+	desc = "EVTDESC198405"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Focus on slavery reform"
+		country_event = 198416
+	}
+	
+	option = {
+		name = "Focus on voting franchise reform"
+		country_event = 198417
+	}
+	
+	option = {
+		name = "Focus on upper house composition reform"
+		country_event = 198418
+	}
+	
+	option = {
+		name = "Focus on voting system reform"
+		country_event = 198419
+	}
+	
+	option = {
+		name = "Focus on public meeting reform"
+		country_event = 198420
+	}
+	
+	option = {
+		name = "Focus on press rights reform"
+		country_event = 198421
+	}
+	
+	option = {
+		name = "Focus on trade union reform"
+		country_event = 198422
+	}
+	
+	option = {
+		name = "Focus on political party reform"
+		country_event = 198423
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+}
+
+country_event = {
+	id = 198406
+	title = "EVTNAME198406"
+	desc = "EVTDESC198406"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Focus on wage reform"
+		country_event = 198424
+	}
+	
+	option = {
+		name = "Focus on work hours reform"
+		country_event = 198425
+	}
+	
+	option = {
+		name = "Focus on safety regulations reform"
+		country_event = 198426
+	}
+	
+	option = {
+		name = "Focus on unemployment subsidies reform"
+		country_event = 198427
+	}
+	
+	option = {
+		name = "Focus on pensions reform"
+		country_event = 198428
+	}
+	
+	option = {
+		name = "Focus on healthcare reform"
+		country_event = 198429
+	}
+	
+	option = {
+		name = "Focus on school reform"
+		country_event = 198430
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+}
+
+country_event = {
+	id = 198408
+	title = "EVTNAME198408"
+	desc = "EVTDESC198408"
+	picture "Smithsonian"
+	
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Increase Militancy."
+		any_pop = {
+			militancy = 1
+		}
+		treasury = -500000
+	}
+	
+	option = {
+		name = "Decrease Militancy."
+		any_pop = {
+			militancy = -1
+		}
+		treasury = -500000
+	}
+	
+	option = {
+		name = "Increase Consciousness."
+		any_pop = {
+			consciousness = 1
+		}
+		treasury = -500000
+	}
+	
+	option = {
+		name = "Decrease Consciousness."
+		any_pop = {
+			consciousness = -1
+		}
+		treasury = -500000
+	}
+	
+	option = {
+		name = "We don't need the help of the ministry right now."
+	}
+	
+}

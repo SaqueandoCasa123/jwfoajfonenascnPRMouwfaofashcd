@@ -1,0 +1,7 @@
+owner = JOH
+controller = JOH
+add_core = PHG
+add_core = JOH
+add_core = SIA
+trade_goods = timber
+life_rating = 35

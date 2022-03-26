@@ -1,0 +1,5 @@
+owner = PBC
+controller = PBC
+add_core = PEU
+trade_goods = rubber
+life_rating = 31

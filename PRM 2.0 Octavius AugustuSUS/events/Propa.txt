@@ -1,0 +1,1269 @@
+###############################
+#Party Issues
+###############################
+country_event = {
+	id = 198411
+	title = "EVTNAME198411"
+	desc = "EVTDESC198411"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Favour Protectionism."
+		any_pop = {
+			dominant_issue {
+				value = protectionism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Favour Free Trade."
+		any_pop = {
+			dominant_issue {
+				value = free_trade 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198404
+	}
+}
+
+country_event = {
+	id = 198412
+	title = "EVTNAME198412"
+	desc = "EVTDESC198412"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Laissez Faire"
+		any_pop = {
+			dominant_issue {
+				value = laissez_faire 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Interventionism"
+		any_pop = {
+			dominant_issue {
+				value = interventionism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "State Capitalism"
+		any_pop = {
+			dominant_issue {
+				value = state_capitalism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Planned Economy"
+		any_pop = {
+			dominant_issue {
+				value = planned_economy 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198404
+	}
+}
+
+country_event = {
+	id = 198413
+	title = "EVTNAME198413"
+	desc = "EVTDESC198413"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Ahteism"
+		any_pop = {
+			dominant_issue {
+				value = pro_atheism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Secularized"
+		any_pop = {
+			dominant_issue {
+				value = secularized 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Pluralism"
+		any_pop = {
+			dominant_issue {
+				value = pluralism
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Moralism"
+		any_pop = {
+			dominant_issue {
+				value = moralism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198404
+	}
+}
+
+country_event = {
+	id = 198414
+	title = "EVTNAME198414"
+	desc = "EVTDESC198414"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Residency"
+		any_pop = {
+			dominant_issue {
+				value = residency 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Limited Citizenship"
+		any_pop = {
+			dominant_issue {
+				value = limited_citizenship 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Full Citizenship"
+		any_pop = {
+			dominant_issue {
+				value = full_citizenship
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198404
+	}
+}
+
+country_event = {
+	id = 198415
+	title = "EVTNAME198415"
+	desc = "EVTDESC198415"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Jingoism"
+		any_pop = {
+			dominant_issue {
+				value = jingoism 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Pro Military"
+		any_pop = {
+			dominant_issue {
+				value = pro_military 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Anti Military"
+		any_pop = {
+			dominant_issue {
+				value = anti_military
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Pacifism"
+		any_pop = {
+			dominant_issue {
+				value = pacifism
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198404
+	}
+}
+
+###############################
+#Political Reforms
+###############################
+
+country_event = {
+	id = 198416
+	title = "EVTNAME198416"
+	desc = "EVTDESC198416"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Support Slavery"
+		any_pop = {
+			dominant_issue {
+				value = yes_slavery 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Abolish Slavery"
+		any_pop = {
+			dominant_issue {
+				value = no_slavery
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198417
+	title = "EVTNAME198417"
+	desc = "EVTDESC198417"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Voting"
+		any_pop = {
+			dominant_issue {
+				value = none_voting 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Landed Voting"
+		any_pop = {
+			dominant_issue {
+				value = landed_voting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Wealth Weighted Voting"
+		any_pop = {
+			dominant_issue {
+				value = wealth_weighted_voting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Wealth Voting"
+		any_pop = {
+			dominant_issue {
+				value = wealth_voting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Universal Weighted Voting"
+		any_pop = {
+			dominant_issue {
+				value = universal_weighted_voting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Universal Voting"
+		any_pop = {
+			dominant_issue {
+				value = universal_voting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198418
+	title = "EVTNAME198418"
+	desc = "EVTDESC198418"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Ruling Party Only"
+		any_pop = {
+			dominant_issue {
+				value = party_appointed 
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Appointed"
+		any_pop = {
+			dominant_issue {
+				value = appointed
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Two Per State"
+		any_pop = {
+			dominant_issue {
+				value = state_equal_weight
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Based on Population"
+		any_pop = {
+			dominant_issue {
+				value = population_equal_weight
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198419
+	title = "EVTNAME198419"
+	desc = "EVTDESC198419"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "First Past the Post"
+		any_pop = {
+			dominant_issue {
+				value = first_past_the_post
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Jefferson Method"
+		any_pop = {
+			dominant_issue {
+				value = jefferson_method
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Proportional"
+		any_pop = {
+			dominant_issue {
+				value = proportional_representation
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198420
+	title = "EVTNAME198420"
+	desc = "EVTDESC198420"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Meeting"
+		any_pop = {
+			dominant_issue {
+				value = no_meeting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Meetings Allowed."
+		any_pop = {
+			dominant_issue {
+				value = yes_meeting
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198421
+	title = "EVTNAME198421"
+	desc = "EVTDESC198421"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "State Press"
+		any_pop = {
+			dominant_issue {
+				value = state_press
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Censored Press"
+		any_pop = {
+			dominant_issue {
+				value = censored_press
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Free Press"
+		any_pop = {
+			dominant_issue {
+				value = free_press
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198422
+	title = "EVTNAME198422"
+	desc = "EVTDESC198422"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Trade Unions"
+		any_pop = {
+			dominant_issue {
+				value = no_trade_unions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "State Only Unions"
+		any_pop = {
+			dominant_issue {
+				value = state_controlled
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Non Socialist Unions Allowed"
+		any_pop = {
+			dominant_issue {
+				value = non_socialist
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "All Unions Allowed"
+		any_pop = {
+			dominant_issue {
+				value = all_trade_unions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+country_event = {
+	id = 198423
+	title = "EVTNAME198423"
+	desc = "EVTDESC198423"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Underground Parties"
+		any_pop = {
+			dominant_issue {
+				value = underground_parties
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Harrasment"
+		any_pop = {
+			dominant_issue {
+				value = harassment
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Gerrymandering"
+		any_pop = {
+			dominant_issue {
+				value = gerrymandering
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Non Secret Ballots"
+		any_pop = {
+			dominant_issue {
+				value = non_secret_ballots
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Secret Ballots"
+		any_pop = {
+			dominant_issue {
+				value = secret_ballots
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198405
+	}
+}
+
+###############################
+#Social Reforms
+###############################
+
+country_event = {
+	id = 198424
+	title = "EVTNAME198424"
+	desc = "EVTDESC198424"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Minimun Wage"
+		any_pop = {
+			dominant_issue {
+				value = no_minimum_wage
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Trinket Wage"
+		any_pop = {
+			dominant_issue {
+				value = trinket_wage
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Low Minimun Wage"
+		any_pop = {
+			dominant_issue {
+				value = low_minimum_wage
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Minimun Wage"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_minimum_wage
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Minimun Wage"
+		any_pop = {
+			dominant_issue {
+				value = good_minimum_wage
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198425
+	title = "EVTNAME198425"
+	desc = "EVTDESC198425"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "Unlimited Work Day"
+		any_pop = {
+			dominant_issue {
+				value = no_work_hour_limit
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "14 Hour Work Day"
+		any_pop = {
+			dominant_issue {
+				value = fourteen_hours
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "12 Hour Work Day"
+		any_pop = {
+			dominant_issue {
+				value = twelve_hours
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "10 Hour Work Day"
+		any_pop = {
+			dominant_issue {
+				value = ten_hours
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "8 Hour Work Day"
+		any_pop = {
+			dominant_issue {
+				value = eight_hours
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198426
+	title = "EVTNAME198426"
+	desc = "EVTDESC198426"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Safety Regulations"
+		any_pop = {
+			dominant_issue {
+				value = no_safety
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Minimal Safety"
+		any_pop = {
+			dominant_issue {
+				value = trinket_safety
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Limited Safety"
+		any_pop = {
+			dominant_issue {
+				value = low_safety
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Safety"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_safety
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Safety"
+		any_pop = {
+			dominant_issue {
+				value = good_safety
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198427
+	title = "EVTNAME198427"
+	desc = "EVTDESC198427"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Subsidies"
+		any_pop = {
+			dominant_issue {
+				value = no_subsidies
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Trinket Subsidies"
+		any_pop = {
+			dominant_issue {
+				value = trinket_subsidies
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Low Subsidies"
+		any_pop = {
+			dominant_issue {
+				value = low_subsidies
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Subsidies"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_subsidies
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Subsidies"
+		any_pop = {
+			dominant_issue {
+				value = good_subsidies
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198428
+	title = "EVTNAME198428"
+	desc = "EVTDESC198428"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Pensions"
+		any_pop = {
+			dominant_issue {
+				value = no_pensions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Trinket Pensions"
+		any_pop = {
+			dominant_issue {
+				value = trinket_pensions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Low Pensions"
+		any_pop = {
+			dominant_issue {
+				value = low_pensions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Pensions"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_pensions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Pensions"
+		any_pop = {
+			dominant_issue {
+				value = good_pensions
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198429
+	title = "EVTNAME198429"
+	desc = "EVTDESC198429"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Health Care"
+		any_pop = {
+			dominant_issue {
+				value = no_health_care
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Trinket Health Care"
+		any_pop = {
+			dominant_issue {
+				value = trinket_health_care
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Low Health Care"
+		any_pop = {
+			dominant_issue {
+				value = low_health_care
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Health Care"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_health_care
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Health Care"
+		any_pop = {
+			dominant_issue {
+				value = good_health_care
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}
+
+country_event = {
+	id = 198430
+	title = "EVTNAME198430"
+	desc = "EVTDESC198430"
+	picture = "Smithsonian"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = yes        #only fired by another event or manually
+	major = no                    #major event has no picture example: great wars enabled
+	fire_only_once = no           #can only be fired once through triggers
+	allow_multiple_instances = no #Allows to fire several at once?
+	
+	option = {
+		name = "No Schools"
+		any_pop = {
+			dominant_issue {
+				value = no_schools
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Low Schools"
+		any_pop = {
+			dominant_issue {
+				value = low_schools
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Acceptable Schools"
+		any_pop = {
+			dominant_issue {
+				value = acceptable_schools
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Good Schools"
+		any_pop = {
+			dominant_issue {
+				value = good_schools
+				factor = 0.05
+			}
+		}
+		treasury = -750000
+	}
+	
+	option = {
+		name = "Go back."
+		country_event = 198406
+	}
+}

@@ -1,0 +1,186 @@
+#############################
+#    EVENTS       ORE       #
+#############################
+
+# Oregon Treaty USA 
+country_event = {
+
+	id = 90006
+
+	trigger = {
+		tag = USA 
+		year = 1846
+		war = no
+		ENG = {
+		    owns = 79
+		    owns = 78
+		}
+		NOT = {
+			ENG = {
+			   owns = 82
+			}
+		}
+		
+	}
+    
+	mean_time_to_happen =  {
+		months = 6
+	}
+	
+	fire_only_once = yes
+
+	title = "EVTNAME90006"
+	desc = "EVTDESC90006"
+	picture = "oregon_treaty"
+
+	option = {
+		name = "EVTOPTA90006"
+		78 = { add_core = USA }
+		79 = { add_core = USA }
+		91 = { add_core = USA }
+		82 = { add_core = USA }
+		83 = { add_core = USA }
+		81 = { add_core = USA }
+		ENG = { country_event = 90007 }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+}
+
+# Oregon Treaty ENG 
+country_event = {
+
+	id = 90007
+
+    fire_only_once = yes
+
+	title = "EVTNAME90007"
+	desc = "EVTDESC90007"
+	picture = "oregon_treaty"
+
+	option = {
+		name = "EVTOPTA90007"
+		prestige = 5
+		money = 25000
+		78 = { secede_province = USA }
+		79 = { secede_province = USA }
+		relation = { who = USA value = 100 }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB90007"
+		prestige = -10
+		relation = { who = USA value = -50 }
+		USA = { country_event = 90008 }
+		ai_chance = {
+		    factor = 0
+		}
+	}
+	
+}
+
+# Oregon Treaty USA NO 
+country_event = {
+
+	id = 90008
+
+    fire_only_once = yes
+
+	title = "EVTNAME90007"
+	desc = "EVTDESC90007"
+	picture = "oregon_treaty"
+
+	option = {
+		name = "EVTOPTA90007"
+		prestige = -5
+		relation = { who = ENG value = -100 }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+}
+
+# Oregon Treaty USA W
+country_event = {
+
+	id = 90008
+
+	trigger = {
+		tag = USA 
+		year = 1846
+		war = no
+		ENG = {
+		    owns = 79
+		    owns = 78
+			owns = 82
+		}
+		
+	}
+    
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	title = "EVTNAME90008"
+	desc = "EVTDESC90008"
+	picture = "oregon_treaty"
+
+	option = {
+		name = "EVTOPTA90008"
+		78 = { add_core = USA }
+		79 = { add_core = USA }
+		91 = { add_core = USA }
+		82 = { add_core = USA }
+		83 = { add_core = USA }
+		81 = { add_core = USA }
+		ENG = { country_event = 90009 }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+}
+
+# Oregon Treaty ENG 
+country_event = {
+
+	id = 90009
+
+    fire_only_once = yes
+
+	title = "EVTNAME90009"
+	desc = "EVTDESC90009"
+	picture = "oregon_treaty"
+
+	option = {
+		name = "EVTOPTA90009"
+		prestige = 5
+		money = 25000
+		78 = { secede_province = USA }
+		79 = { secede_province = USA }
+		82 = { secede_province = USA }
+		83 = { secede_province = USA }
+		81 = { secede_province = USA }
+		relation = { who = USA value = 100 }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB90009"
+		prestige = -10
+		relation = { who = USA value = -50 }
+		USA = { country_event = 90008 }
+		ai_chance = {
+		    factor = 0
+		}
+	}
+	
+}

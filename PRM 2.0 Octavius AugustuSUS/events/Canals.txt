@@ -1,0 +1,83 @@
+country_event = {
+
+	id = 97250
+	title = "EVTNAME97250"
+	desc = "EVTDESC97250"
+	picture = "SuezCanalPRM"
+	
+	trigger = {
+		1755 = { has_province_modifier = suez_canal }
+		NOT = { has_country_modifier = suez_canal_dividend }
+		NOT = { month = 1 }
+		owns = 1755
+	}
+		
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "EVTOPTA97250"	
+		treasury = 50000 
+		add_country_modifier = {
+			name = suez_canal_dividend
+			duration = 31
+		}
+	}
+}
+
+country_event = {
+
+	id = 97350
+	title = "EVTNAME97350"
+	desc = "EVTDESC97350"
+	picture = "PanamaCanalPRM"
+	
+	trigger = {
+		1723 = { has_province_modifier = panama_canal }
+		NOT = { has_country_modifier = panama_canal_dividend }
+		NOT = { month = 1 }
+		owns = 1723
+	}
+		
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "EVTOPTA97350"	
+		treasury = 50000
+		add_country_modifier = {
+			name = panama_canal_dividend
+			duration = 31
+		}
+	}
+}
+
+country_event = {
+
+	id = 97200
+	title = "EVTNAME97200"
+	desc = "EVTDESC97200"
+	picture = "KielCanalPRM"
+	
+	trigger = {
+		369 = { has_province_modifier = kiel_canal }
+		NOT = { has_country_modifier = kiel_canal_dividend }
+		NOT = { month = 1 }
+		owns = 369
+	}
+		
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "EVTOPTA97200"	
+		treasury = 5000
+		add_country_modifier = {
+			name = kiel_canal_dividend
+			duration = 31
+		}
+	}
+}

@@ -1,0 +1,123 @@
+political_decisions = {
+    form_Plate = {
+		potential = {
+		    picture = unite_la_plata
+			OR = {
+				tag = ARG
+				tag = CHL
+				tag = URU
+			}
+			NOT = {
+				exists = LPL
+			}
+		}	
+		allow = {
+			war = no
+			LPL = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			change_tag = LPL
+			any_country = {
+				limit = {
+					vassal_of = THIS
+				}
+				annex_to = LPL
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+				}
+				
+				any_owned = {
+					limit = {
+						is_core = LPL
+					}
+					secede_province = LPL
+				}
+
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_ATC_NEW = {
+		potential = {
+		    picture = form_antillean_confederation
+			OR = {
+				tag = DOM
+				tag = HAI
+				tag = CUB
+			}
+			NOT = {
+				exists = ATC
+			}
+		}	
+		allow = {
+			war = no
+			ATC = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			change_tag = ATC
+			any_country = {
+				limit = {
+					vassal_of = THIS
+				}
+				annex_to = ATC
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+				}
+				
+				any_owned = {
+					limit = {
+						is_core = ATC
+					}
+					secede_province = ATC
+				}
+
+			}
+			ENG_203 = {
+				add_core = ATC
+			}
+			ENG_2224 = {
+				add_core = ATC
+			}
+			ENG_2228 = {
+				add_core = ATC
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}

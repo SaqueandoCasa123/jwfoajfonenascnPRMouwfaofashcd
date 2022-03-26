@@ -1,0 +1,93 @@
+# END PBC
+country_event = {
+
+	id = 666966
+
+	trigger = {
+		tag = PBC 
+        not = {
+            has_global_flag = END_PBC_DECISION
+        }			
+	}
+    
+	is_triggered_only = yes
+
+	title = "EVTNAME666966"
+	desc = "EVTDESC666966"
+	
+	major = yes
+
+	option = {
+		name = "EVTOPTA666966"
+		prestige = 5
+		set_global_flag = END_PBC_DECISION
+		random_owned = {
+                limit = { exists = BOL }
+                owner = {
+                    change_tag_no_core_switch = BOL
+                    any_owned = { secede_province = BOL }
+                }
+            }
+            random_owned = {
+                limit = { NOT = { exists = BOL } }
+                owner = {
+                    change_tag = BOL
+                }
+            }
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = BRZ
+                        tag = ARG
+                        tag = PEU
+                    }
+                }
+                relation = { who = BOL value = 300 }
+            }
+        }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+		option = {
+		name = "EVTOPTB666966"
+		prestige = 5
+		set_global_flag = END_PBC_DECISION
+		random_owned = {
+                limit = { exists = PEU }
+                owner = {
+                    change_tag_no_core_switch = PEU
+                    any_owned = { secede_province = PEU }
+                }
+            }
+            random_owned = {
+                limit = { NOT = { exists = PEU } }
+                owner = {
+                    change_tag = PEU
+                }
+            }
+            any_country = {
+                limit = {
+                    OR = {
+                        tag = CHL
+                        tag = ARG
+                        tag = BOL
+                    }
+                }
+                relation = { who = PEU value = 300 }
+            }
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+		option = {
+		name = "EVTOPTC666966"
+		set_global_flag = END_PBC_DECISION
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+}

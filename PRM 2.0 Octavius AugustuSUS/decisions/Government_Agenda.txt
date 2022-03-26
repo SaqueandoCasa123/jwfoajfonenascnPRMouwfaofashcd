@@ -1,0 +1,704 @@
+political_decisions = {
+	form_family_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = party_appointed
+				upper_house_composition = population_equal_weight
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = close_friends_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = military_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+				}
+			}
+		}
+		allow = {
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = family_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = fascist
+			}
+		}
+	}
+
+	form_close_friends_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			upper_house_composition = party_appointed
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 
+					has_country_modifier = family_cabinet
+					has_country_modifier = close_friends_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = military_cabinet
+				}
+			}
+		}
+		allow = {
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+				ruling_party_ideology = anarcho_liberal
+			}
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = close_friends_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = fascist
+			}
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = communist
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = conservative
+			}
+		}
+	}
+
+	form_potent_partners_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = party_appointed
+				upper_house_composition = appointed
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = close_friends_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = military_cabinet
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = lawyers_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = potent_partners_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				ruling_party_ideology = communist
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = fascist
+			}
+			modifier = {
+				factor = 0.7
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = socialist
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = conservative
+			}
+		}
+	}
+
+	form_military_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			upper_house_composition = party_appointed
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 
+					has_country_modifier = family_cabinet
+					has_country_modifier = close_friends_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = military_cabinet
+				}
+			}
+		}
+		allow = {
+			OR = {
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = military_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = fascist
+			}
+		}
+	}
+
+	form_aristocratic_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			upper_house_composition = appointed
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = lawyers_cabinet
+				}
+			}
+		}
+		allow = {
+			NOT = {
+				ruling_party_ideology = communist
+				ruling_party_ideology = socialist
+			}
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = aristocratic_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.3
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.2
+				ruling_party_ideology = fascist
+			}
+		}
+	}
+
+	form_plus_capitalists_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			upper_house_composition = appointed
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = lawyers_cabinet
+				}
+			}
+		}
+		allow = {
+			NOT = {
+				ruling_party_ideology = communist
+				ruling_party_ideology = socialist
+			}
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = plus_capitalists_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 1
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.4
+				ruling_party_ideology = fascist
+			}
+		}
+	}
+
+	form_intellectuals_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = appointed
+				upper_house_composition = population_equal_weight
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = intellectuals_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 0.8
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.2
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 1
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.4
+				ruling_party_ideology = fascist
+			}
+			modifier = {
+				factor = 0.6
+				ruling_party_ideology = communist
+			}
+			modifier = {
+				factor = 0.7
+				ruling_party_ideology = socialist
+			}
+		}
+	}
+
+	form_lawyers_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = appointed
+				upper_house_composition = population_equal_weight
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = lawyers_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.7
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 0.6
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.4
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.7
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.4
+				ruling_party_ideology = fascist
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = communist
+			}
+			modifier = {
+				factor = 0.1
+				ruling_party_ideology = socialist
+			}
+		}
+	}
+
+	form_economists_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = population_equal_weight
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = economists_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.4
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 0.7
+				ruling_party_ideology = anarcho_liberal
+			}
+			modifier = {
+				factor = 0.3
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.6
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.1
+				ruling_party_ideology = fascist
+			}
+			modifier = {
+				factor = 0
+				ruling_party_ideology = communist
+			}
+			modifier = {
+				factor = 0.9
+				ruling_party_ideology = socialist
+			}
+		}
+	}
+	
+	form_diverse_minds_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			OR = {
+				upper_house_composition = state_equal_weight
+				upper_house_composition = population_equal_weight
+			}
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = family_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = local_representatives_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = diverse_minds_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				AND = { 
+					government = democracy
+					vote_franschise = universal_voting
+					political_parties = secret_ballots
+					ruling_party_ideology = socialist
+					year = 2010
+				}
+			}
+		}
+	}
+
+	form_local_representatives_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			civilized = yes
+			upper_house_composition = state_equal_weight
+			OR = {
+				ai = yes
+				has_country_flag = pick_up_a_gov_cabinet
+			}
+			NOT = { has_country_modifier = dismissed_cabinet }
+			NOT = { 
+				OR = { 	
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = local_representatives_cabinet
+				}
+			}
+		}
+		allow = {
+			prestige = 45
+		}
+		effect = {
+			add_country_modifier = { name = rescabinet duration = 365 }
+			add_country_modifier = { name = local_representatives_cabinet duration = 3650 }		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dismiss_cabinet = {
+		picture = gov_cabinet_picture
+		potential = {
+			NOT = { has_country_modifier = rescabinet }
+			OR = {
+				government = democracy
+				government = hms_government
+				government = prussian_constitutionalism
+			}				
+			OR = { 
+				has_country_modifier = family_cabinet
+				has_country_modifier = close_friends_cabinet
+				has_country_modifier = potent_partners_cabinet
+				has_country_modifier = military_cabinet
+				has_country_modifier = diverse_minds_cabinet
+				has_country_modifier = intellectuals_cabinet
+				has_country_modifier = aristocratic_cabinet
+				has_country_modifier = plus_capitalists_cabinet
+				has_country_modifier = local_representatives_cabinet
+				has_country_modifier = lawyers_cabinet
+				has_country_modifier = economists_cabinet
+			}
+		}
+		alert = no
+		allow = {
+			OR = {	
+				ai = no
+				election = yes
+			}
+		}
+		effect = {
+			remove_country_modifier = family_cabinet
+			remove_country_modifier = close_friends_cabinet
+			remove_country_modifier = potent_partners_cabinet
+			remove_country_modifier = military_cabinet
+			remove_country_modifier = diverse_minds_cabinet
+			remove_country_modifier = intellectuals_cabinet
+			remove_country_modifier = aristocratic_cabinet
+			remove_country_modifier = plus_capitalists_cabinet
+			remove_country_modifier = local_representatives_cabinet
+			remove_country_modifier = lawyers_cabinet
+			remove_country_modifier = economists_cabinet
+			add_country_modifier = { name = dismissed_cabinet duration = 183 }	
+		}
+		ai_will_do = { 
+			factor = 1 
+		}
+	}
+	
+	pick_up_a_gov_cabinet = {
+		picture = gov_cabinet
+		potential = {
+			ai = no
+			civilized = yes
+			NOT = { has_country_flag = pick_up_a_gov_cabinet }
+			NOT = { 
+				OR = { 
+					has_country_modifier = family_cabinet
+					has_country_modifier = close_friends_cabinet
+					has_country_modifier = potent_partners_cabinet
+					has_country_modifier = military_cabinet
+					has_country_modifier = diverse_minds_cabinet
+					has_country_modifier = intellectuals_cabinet
+					has_country_modifier = aristocratic_cabinet
+					has_country_modifier = plus_capitalists_cabinet
+					has_country_modifier = local_representatives_cabinet
+					has_country_modifier = lawyers_cabinet
+					has_country_modifier = economists_cabinet
+					has_country_modifier = dismissed_cabinet
+				}
+			}
+					
+		}
+		
+		allow = {
+			prestige = 45
+		}
+		
+		effect = {
+			set_country_flag = pick_up_a_gov_cabinet
+		}
+	}
+	
+	close_pick_up_a_gov_cabinet = {
+		picture = gov_cabinet
+		alert = no
+		potential = {
+			ai = no
+			civilized = yes
+			has_country_flag = pick_up_a_gov_cabinet
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			clr_country_flag = pick_up_a_gov_cabinet
+		}
+	}
+}

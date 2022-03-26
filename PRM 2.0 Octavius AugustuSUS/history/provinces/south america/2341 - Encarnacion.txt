@@ -1,0 +1,6 @@
+owner = PRG
+controller = PRG
+add_core = PRG
+add_core = LPL
+trade_goods = timber
+life_rating = 31

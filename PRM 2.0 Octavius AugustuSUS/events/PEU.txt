@@ -1,0 +1,32 @@
+#############################
+#    EVENTS       PEU       #
+#############################
+
+# PEU KARL
+country_event = {
+
+	id = 45678954
+
+	trigger = {
+		tag = PBC 
+		exists = PEU 
+	}
+    
+	mean_time_to_happen =  {
+		day = 1
+	}
+
+	title = "EVTNAME90001"
+	desc = "EVTDESC90001"
+	picture = "end_of_pbc"
+
+	option = {
+		name = "EVTOPTA90001"
+		prestige = -5
+        change_tag = BOL
+		ai_chance = {
+		    factor = 100
+		}
+	}
+	
+}

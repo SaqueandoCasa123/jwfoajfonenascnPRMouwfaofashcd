@@ -1,0 +1,43 @@
+leader = {
+    name = "Francisco Morazan"
+    type = land
+    date="1830.1.1"
+    personality = Leader
+    background = Strategist
+}
+
+army = {
+    name = "Ejército Federal"
+    location = 2187
+    regiment = {
+        name= "1. División de Infantería"
+        type = infantry
+        home = 2187
+    }
+
+    regiment = {
+        name= "2. División de Infantería"
+        type = infantry
+        home = 2191
+    }
+
+    regiment = {
+        name= "3. División de Infantería"
+        type = infantry
+        home = 2186
+    }
+	
+	regiment = {
+        name= "1. División de Artilleria"
+        type = artillery
+        home = 2186
+    }
+	
+	regiment = {
+        name= "4. División de Infantería"
+        type = infantry
+        home = 2187
+    }
+
+
+}

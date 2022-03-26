@@ -1,0 +1,129 @@
+#Create Ministry of Propaganda
+political_decisions = {
+
+	create_ministry = {
+		picture = institute_central_bank
+		news = yes
+		news_desc_long = "form_MP_NEWS_LONG"
+		news_desc_medium = "form_MP_NEWS_MEDIUM"
+		news_desc_short = "form_MP_NEWS_SHORT"
+		
+		potential = {
+			ai = no
+			ideological_thought = 1
+			NOT = {has_country_flag = ministry_propaganda}
+		}
+		allow = {
+			money = 500000
+		}
+		effect = {
+			set_country_flag = ministry_propaganda
+			treasury = -500000
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	party_issues_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198404
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	reform_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198405
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	social_reform_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198406
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	infamy_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198401
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	war_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198402
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mil_propaganda = { 
+		picture = institute_central_bank
+		potential = {
+			has_country_flag = ministry_propaganda
+		}
+		allow = {
+			has_country_flag = ministry_propaganda
+		}
+		effect = {
+			country_event = 198408
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,5 @@
+owner = POR
+controller = POR
+trade_goods = grain
+terrain = savanna
+life_rating = 35

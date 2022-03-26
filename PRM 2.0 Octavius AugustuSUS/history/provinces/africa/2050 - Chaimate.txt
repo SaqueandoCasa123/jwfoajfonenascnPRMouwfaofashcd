@@ -1,0 +1,5 @@
+owner = POR
+controller = POR
+terrain = savanna
+trade_goods = cattle
+life_rating = 35

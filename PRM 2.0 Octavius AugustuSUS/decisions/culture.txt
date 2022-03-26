@@ -1,0 +1,244 @@
+political_decisions = {
+	    XZ_acep_quech = {
+	        potential = {
+			picture = native_integration_status
+		        tag = PEU
+			    not = {
+			    has_global_flag = culure_PRM_XZ_AAA
+		    } 
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = quechua
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAA
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }
+        XC_acep_quech = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = BOL
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAAAasdfgyhdseqqeqrqe
+		    } 
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = quechua
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAAasdfgyhdseqqeqrqe
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }	
+    XZ_acep_patag = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = CHL
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAAA
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = patagonian
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAA
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }
+    XC_acep_patag = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = ARG
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAAAAAA
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = patagonian
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAAAAA
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }
+    XZ_acep_native = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = MEX
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAABBB
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = native_american_minor
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAABBB
+			}
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }	
+    XZ_acep_nahua = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = MEX
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAANNNNN
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = nahua
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAANNNNN
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }			
+	XZ_acep_mayanUCA = {
+	        potential = {
+			    picture = native_integration_status
+		        tag = UCA
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAAFGFGFGGF
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = mayan
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAFGFGFGGF
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }	
+	XZ_acep_mongolRUS = {
+	        potential = {
+			    picture = claim_greater_mongolia
+		        tag = RUS
+				owns = 1468
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAAQWQQWQ
+		    }
+	        }
+	        allow = {
+			    owns = 1468
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = mongol
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAQWQQWQ
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }	
+	XZ_acep_manchuRUS = {
+	        potential = {
+			    picture = manchuria_map
+		        tag = RUS
+				owns = 1555
+				not = {
+			    has_global_flag = culure_PRM_XZ_AAARTRTRTTRRRTRTT
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+				owns = 1555
+	        }
+	        effect = {
+		        add_accepted_culture = manchu
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAARTRTRTTRRRTRTT
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }
+    XZ_acep_amazonianCLMVNZECU = {
+	        potential = {
+			    picture = native_integration_status
+		        OR = {
+				    tag = CLM
+				    tag = VNZ
+					tag = ECU
+			    }
+			not = {
+			    has_global_flag = culure_PRM_XZ_AAAGHJGHJGHA
+		    }
+	        }
+	        allow = {
+		        biologism = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = amazonian
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAGHJGHJGHA
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }	
+    XZ_acep_polish = {
+	        potential = {
+			picture = unite_with_poland
+		        OR = {
+				    tag = PRU
+				    tag = GER
+					tag = NGF
+			    }
+			not = {
+			    has_global_flag = culure_PRM_XZ_AAAasdgy
+		    }
+	        }
+	        allow = {
+		        social_science = 1
+				war = no
+	        }
+	        effect = {
+		        add_accepted_culture = polish
+				prestige = 5
+				set_global_flag = culure_PRM_XZ_AAAasdgy
+	        }
+	        ai_will_do = {
+		        factor = 1
+	        } 
+        }		
